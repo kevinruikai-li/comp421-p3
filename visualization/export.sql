@@ -1,0 +1,1 @@
+EXPORT TO revenue_by_genre.csv OF DEL MODIFIED BY NOCHARDEL SELECT B.genre, SUM(C.qty * C.price) AS total_revenue FROM Book B JOIN Contains C ON B.isbn = C.isbn GROUP BY B.genre ORDER BY total_revenue DESC;
