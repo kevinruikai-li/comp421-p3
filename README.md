@@ -1,7 +1,7 @@
 # COMP-421 Project 3: BookStore Admin Application
 **Group 41** This repository contains the Java JDBC application for Project 3. It connects to the DB2 database hosted on the `winter2026-comp421.cs.mcgill.ca` server to manage a bookstore's inventory, sales, and user reviews.
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 1. **Environment Variables:** For security, this application does not hardcode database credentials. You must set your SOCS credentials in your terminal environment before running the app:
    ```bash
@@ -16,7 +16,7 @@
    db2 -td@ -f procedure.sql
    ```
 
-## 🚀 Compilation & Execution
+## Compilation & Execution
 
 Because the DB2 JDBC driver is already globally configured in the McGill server's CLASSPATH, compilation and execution are straightforward.
 
@@ -30,7 +30,7 @@ javac BookStoreApp.java
 java BookStoreApp
 ```
 
-## 📋 Menu Features & Rubric Mapping
+## Menu Features & Rubric Mapping
 
 Our application features a looping, console-based UI that gracefully handles `SQLExceptions` and provides the following functionalities:
 
